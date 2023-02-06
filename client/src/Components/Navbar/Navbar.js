@@ -36,7 +36,7 @@ function Navbar() {
             <span className="navbarIconBadge">1</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" alt="" className="navbarImg" />
+        <img src="/Assets/Person/1.jpeg" alt="" className="navbarImg" />
       </div>
     </div>
   );
