@@ -29,19 +29,15 @@
 }
 
 .rightsidebarTitle {
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .rightsidebarFriendList {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.rightsidebarTitle {
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .rightsidebarInfo {

@@ -24,10 +24,83 @@ function RightSideBar({ profile }) {
     );
   };
 
+  const ProfileRightbar = () => {
+    return (
+      <>
+        <h4 className="rightsidebarTitle">User information</h4>
+        <div className="rightsidebarInfo">
+          <div className="rightsidebarInfoItem">
+            <span className="rightsidebarInfoKey">City:</span>
+            <span className="rightsidebarInfoValue">New York</span>
+          </div>
+          <div className="rightsidebarInfoItem">
+            <span className="rightsidebarInfoKey">From:</span>
+            <span className="rightsidebarInfoValue">Madrid</span>
+          </div>
+          <div className="rightsidebarInfoItem">
+            <span className="rightsidebarInfoKey">Relationship:</span>
+            <span className="rightsidebarInfoValue">Single</span>
+          </div>
+        </div>
+        <h4 className="rightsidebarTitle">User friends</h4>
+        <div className="rightsidebarFollowings">
+          <div className="rightsidebarFollowing">
+            <img
+              src="assets/person/1.jpeg"
+              alt=""
+              className="rightsidebarFollowingImg"
+            />
+            <span className="rightsidebarFollowingName">John Carter</span>
+          </div>
+          <div className="rightsidebarFollowing">
+            <img
+              src="assets/person/2.jpeg"
+              alt=""
+              className="rightsidebarFollowingImg"
+            />
+            <span className="rightsidebarFollowingName">John Carter</span>
+          </div>
+          <div className="rightsidebarFollowing">
+            <img
+              src="assets/person/3.jpeg"
+              alt=""
+              className="rightsidebarFollowingImg"
+            />
+            <span className="rightsidebarFollowingName">John Carter</span>
+          </div>
+          <div className="rightsidebarFollowing">
+            <img
+              src="assets/person/4.jpeg"
+              alt=""
+              className="rightsidebarFollowingImg"
+            />
+            <span className="rightsidebarFollowingName">John Carter</span>
+          </div>
+          <div className="rightsidebarFollowing">
+            <img
+              src="assets/person/5.jpeg"
+              alt=""
+              className="rightsidebarFollowingImg"
+            />
+            <span className="rightsidebarFollowingName">John Carter</span>
+          </div>
+          <div className="rightsidebarFollowing">
+            <img
+              src="assets/person/6.jpeg"
+              alt=""
+              className="rightsidebarFollowingImg"
+            />
+            <span className="rightsidebarFollowingName">John Carter</span>
+          </div>
+        </div>
+      </>
+    );
+  };
+
   return (
     <div className="rightsidebar">
       <div className="rightsidebarWrapper">
-        {profile ? "" : <HomeRightbar />}
+        {profile ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   );
