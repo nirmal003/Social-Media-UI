@@ -2,14 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.js",
-      "use": "@vercel/node"
+      "src": "package.json",
+      "use": "vercel-sapper"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "/api/admin/(.*)",
+      "dest": "https://admin-api.your-analytics.org/$1"
+    },
+    {
+      "src": "/api/query/(.*)",
+      "dest": "https://query-api.your-analytics.org/$1"
     }
   ]
 }
